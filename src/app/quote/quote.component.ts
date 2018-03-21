@@ -6,27 +6,28 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-
+  quotes= [
+    new Quote(1,'Watch Finding Nemo','jjj',new Date(2018,11,2)),
+    new Quote(2,'Buy Cookies','jkj',new Date(2018,1,12)),
+  ]
 
     addNewQuote(quote){
-     let quoteLength = this.Quotes.length;
+     let quoteLength = this.quotes.length;
     quote.id=quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
-    this.Quotes.push(quote)
+    this.quotes.push(quote)
     //
   };
-    //    deleteQuote(isComplete,index){
-    //      if (isComplete){
-    //        this.quotes.splice(index,1);
-    //      }
+        deleteQuote(isComplete,index){
+          if (isComplete){
+            this.quotes.splice(index,1);
+          }
     //    }
     //    toogleDetails(index){
     //            this.quotes[index].showDescription = !this.quotes[index].showDescription;
     //        }
+  }
   constructor() { };
 
   ngOnInit() {
   };
-
-
-}

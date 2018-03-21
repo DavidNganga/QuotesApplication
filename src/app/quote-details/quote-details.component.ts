@@ -6,10 +6,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  quotes= [
-    new Quote(1,'Watch Finding Nemo','jjj',new Date(2018,11,2)),
-    new Quote(2,'Buy Cookies','jkj',new Date(2018,1,12)),
-  ]
+
 @Input() quote:Quote;
 @Output() isComplete= new EventEmitter<boolean>();
 
@@ -18,12 +15,12 @@ quoteDelete(complete:boolean){
 }
 deleteQuote(isComplete,index){
   if (isComplete){
-    this.quotes.splice(index,1);
+    //this.quotes.splice(index,1);
   }
 }
-toogleDetails(index){
-        this.quotes[index].showDescription = !this.quotes[index].showDescription;
-    }
+//toogleDetails(index){
+  //      this.quote.showDescription = !this.quote.showDescription;
+   //}
   constructor() { }
 
   ngOnInit() {
