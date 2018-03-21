@@ -7,8 +7,8 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes= [
-    new Quote(1,'Watch Finding Nemo','jjj',new Date(2018,11,2)),
-    new Quote(2,'Buy Cookies','jkj',new Date(2018,1,12)),
+    new Quote(1,'Watch Finding Nemo','',new Date(2018,11,2)),
+    new Quote(2,'Buy Cookies','',new Date(2018,1,12)),
   ]
 
     addNewQuote(quote){
@@ -31,3 +31,4 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit() {
   };
+}
