@@ -9,14 +9,24 @@
         <div class="form-group">
 
           <label for="name">Author</label>
-          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"> Display {{newQuote.name}}
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
+          <br>
+          <br>
+          <br> Display {{newQuote.name}}
         </div>
+        <br>
+        <br>
+        <br>
         <div class="form-group">
 
           <label for="description">Quote</label>
-          <textarea class="form-control" id="description" rows="4" name='quote' [(ngModel)]='newQuote.description' required></textarea> Display {{newQuote.description}}
+          <input type="text" class="form-control" id="description" name='quote' [(ngModel)]='newQuote.description' required>
+          <br>
+          <br>
+          <br> Display {{newQuote.description}}
 
         </div>
+        <br>
         <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
       </form>
     </div>
