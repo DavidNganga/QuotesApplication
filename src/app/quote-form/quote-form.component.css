@@ -1,9 +1,17 @@
 .form {
-  align-items: center;
-  color: black;
+  padding: 0px 46px 0px 538px;
 }
 
 .btn {
   background-color: aqua;
   font-size: 12px;
+}
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: black;
+  border: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  padding: 5px 45px;
 }
