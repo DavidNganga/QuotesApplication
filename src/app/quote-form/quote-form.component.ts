@@ -1,5 +1,6 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import {Quote} from '../quote';
+//import {Upvote} from '../upvote';
 @Component({
   selector: 'app-quote-form',
   templateUrl: './quote-form.component.html',

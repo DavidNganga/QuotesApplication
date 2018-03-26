@@ -1,4 +1,11 @@
 .btn {
   background-color: red;
   font-size: 12px;
+  padding: 0px 46px 0px 700px;
+}
+
+#work {
+  color: black;
+  border: none;
+  padding: 5px 45px;
 }
